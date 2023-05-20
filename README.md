@@ -133,6 +133,8 @@ print(repository_uri)
 ```
 pls-  play dose commend before to up the the boto3-
 ```shell
-pip install boto3
+pip3.9 install boto3
 ```
+after we have a repo- I create a cluster and node group via gui,
+
 
