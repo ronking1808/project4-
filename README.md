@@ -1,5 +1,5 @@
 1. at the start of the project, I built a python file to follow the CPU and Memory power. 
-'''' python
+``` python
 import psutil
 from flask import Flask
 
@@ -18,6 +18,6 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
-''''
+```
 
 4.
