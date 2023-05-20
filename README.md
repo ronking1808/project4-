@@ -100,4 +100,39 @@ if __name__ == '__main__':
     </script>
 </body>
    ```
+3. after I finish with my UI and Python app, time to turn on my DevOps power! and to make the code to a container via Dockerfile.
+ ``` shell 
+ FROM python:3.9-slim-buster
+
+WORKDIR /app
+
+COPY requirements.txt.
+
+RUN pip3 install --upgrade pip --no-cache-dir -r /app/requirements.txt
+
+COPY . .
+
+ENV FLASK_RUN_HOST=0.0.0.0
+
+EXPOSE 5000
+
+CMD ["flask", "run"]
+```
+via the requirements.txt I install all the things I need for the project, and then I copy all the files in the directory and start them on localhost ip in port 5000. 
+4. after I finished with my docker file, I write a Python file that gone build the repo in aws-:
+```python 
+import boto3
+
+ecr_client = boto3.client('ecr')
+
+repository_name = "my_project"
+response = ecr_client.create_repository(repositoryName=repository_name)
+
+repository_uri = response ['repository']['repositoryUri']
+print(repository_uri)
+```
+pls-  play dose commend before to up the the boto3-
+```shell
+pip install boto3
+```
 
