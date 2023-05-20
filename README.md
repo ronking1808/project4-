@@ -21,7 +21,7 @@ if __name__ == '__main__':
 ```
 
 2.after that I take a templeate that helps me to create a web more nice...
-```  
+```shell 
 <!DOCTYPE html>
 <html>
 <head>
