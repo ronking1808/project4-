@@ -10,3 +10,4 @@ boto3==1.9.148
 kubernetes==10.0.1
 selenium==4.1.0
 pytest==6.2.5
+urllib3==1.26
