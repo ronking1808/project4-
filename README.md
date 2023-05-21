@@ -1,3 +1,8 @@
+<h1>PROJECT-FROM PY.APP TO A K8S</h1>
+
+
+
+
 1. at the start of the project, I built a python file to follow the CPU and Memory power,with a psutil modle that halps as with the monitoring.
 ``` python
 import psutil
