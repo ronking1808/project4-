@@ -8,5 +8,5 @@ plotly==5.5.0
 tenacity==8.0.1
 boto3==1.9.148
 kubernetes==10.0.1
-selenium
-selenium pytest
+selenium==4.1.0
+pytest==6.2.5
