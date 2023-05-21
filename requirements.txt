@@ -9,3 +9,4 @@ tenacity==8.0.1
 boto3==1.9.148
 kubernetes==10.0.1
 selenium
+selenium pytest
